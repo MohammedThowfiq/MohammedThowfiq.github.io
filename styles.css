@@ -265,3 +265,6 @@ section[id]{scroll-margin-top:78px}
 }
 
 header nav a.active:after{right:0}
+
+/* Keep the readable ticker pace from being collapsed by the global motion fallback. */
+@media(prefers-reduced-motion:reduce){.signal-strip>div{animation-duration:90s!important}}
