@@ -19,3 +19,45 @@ header{position:fixed;z-index:100;inset:0 0 auto;height:78px;padding:0 3.2vw;dis
 
 @media(max-width:1000px){.skills-head{grid-template-columns:1fr}.skills-head>p{grid-column:auto;grid-row:auto}.work-card{grid-template-columns:45px 1fr}.work-visual{grid-column:2}.lab-grid{grid-template-columns:1fr 1fr}.lab-feature{grid-column:1/-1}}
 @media(max-width:640px){.skills-head h2{font-size:44px}.skills-grid{grid-template-columns:1fr}.skill-cluster,.skill-cluster:nth-child(even){padding:28px 0;border-right:0}.work-card{grid-template-columns:1fr;padding:24px}.work-visual{grid-column:auto;min-height:230px}.client-name{margin-top:16px}.lab-grid{grid-template-columns:1fr}.lab-feature{grid-column:auto}}
+
+/* Responsive editorial pass: preserve the visual language while improving pace. */
+.lab-card{min-height:460px}
+.agent-map,.mcp-mark,.rag-mark,.exception-mark,.document-mark,.release-mark{min-height:145px;margin:38px 0 26px}
+section[id]{scroll-margin-top:78px}
+
+@media(min-width:641px) and (max-width:1000px){
+  .section{padding-top:112px;padding-bottom:112px}
+  .skills-head{gap:26px;margin-bottom:48px}
+  .skills-head>p{max-width:650px}
+  .skill-cluster{min-height:215px;padding-top:28px;padding-bottom:30px}
+  .skill-cluster h3{margin-top:26px}
+
+  .work-head{margin-bottom:50px}
+  .work-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .work-card{grid-template-columns:1fr;gap:20px;padding:28px;border-radius:26px}
+  .work-card:first-child{grid-column:1/-1;grid-template-columns:38px minmax(0,1fr) 250px;align-items:stretch}
+  .work-card:not(:first-child) .work-num{display:none}
+  .work-main h3{margin-top:18px;font-size:clamp(29px,4.2vw,43px)}
+  .work-visual{grid-column:auto;min-height:220px;padding:22px;border-radius:20px}
+  .work-card:first-child .work-visual{min-height:280px}
+  .visual-model>div{grid-template-columns:repeat(3,62px)}
+
+  .lab-grid{margin-top:52px;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .lab-feature{grid-column:auto}
+  .lab-card{min-height:430px;padding:24px;border-radius:25px}
+  .lab-card h3{font-size:25px}
+  .agent-map,.mcp-mark,.rag-mark,.exception-mark,.document-mark,.release-mark{min-height:120px;margin:30px 0 24px}
+}
+
+@media(max-width:640px){
+  .skills-head{gap:22px;margin-bottom:42px}
+  .skills-head>p{margin:0}
+  .skill-cluster{min-height:auto}
+  .work-head{margin-bottom:44px}
+  .work-list{gap:12px}
+  .work-card{border-radius:24px}
+  .work-main h3{font-size:31px}
+  .lab-grid{margin-top:45px}
+  .lab-card{min-height:420px;padding:24px;border-radius:24px}
+  .agent-map,.mcp-mark,.rag-mark,.exception-mark,.document-mark,.release-mark{min-height:120px;margin:30px 0 24px}
+}
