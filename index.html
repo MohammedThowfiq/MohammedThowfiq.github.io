@@ -16,8 +16,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260901-3">
-  <script defer src="main.js?v=20260901-3"></script>
+  <link rel="stylesheet" href="styles.css?v=20260905-1">
+  <script defer src="main.js?v=20260905-1"></script>
 </head>
 <body>
   <div class="cursor-glow" aria-hidden="true"></div>
@@ -25,7 +25,7 @@
   <header data-header>
     <a class="wordmark" href="#home" aria-label="Mohammed Thowfiq, home"><span>MOHAMMED</span><span>THOWFIQ®</span></a>
     <nav data-nav aria-label="Primary navigation">
-      <a href="#story">Profile</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#lab">AI Lab</a><a href="#contact">Contact</a>
+      <a href="#story">Profile</a><a href="#skills">Skills</a><a href="#work">Work</a><a href="#opensource">Open Source</a><a href="#lab">AI Lab</a><a href="#contact">Contact</a>
     </nav>
     <button class="menu" data-menu type="button" aria-expanded="false" aria-label="Open navigation"><i></i><i></i></button>
     <a class="header-cta" href="mailto:mohammedthowfiq2@gmail.com"><i></i> Let’s talk</a>
@@ -34,7 +34,7 @@
   <main id="main">
     <section class="hero" id="home">
       <div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-index mono">01—05 / DOHA, QA</div>
+      <div class="hero-index mono">01—06 / DOHA, QA</div>
       <div class="hero-title reveal">
         <p class="kicker"><span></span> FINTECH ENGINEER · TECHNOLOGY CONSULTANT</p>
         <h1><span>FINANCE,</span><span>ENGINEERED</span><span class="outline">FORWARD.</span></h1>
@@ -119,9 +119,32 @@
       </div>
     </section>
 
+    <section class="opensource section" id="opensource">
+      <div class="section-code mono">/ 06 OPEN SOURCE</div>
+      <div class="opensource-head reveal">
+        <p class="overline">CONTRIBUTING IN THE OPEN</p>
+        <h2>Small changes.<br><em>Real impact.</em></h2>
+        <p>I contribute focused fixes, tests and documentation improvements across cloud, developer tooling, data and AI projects.</p>
+      </div>
+      <div class="opensource-stats reveal" aria-label="Open-source contribution status">
+        <div><strong>08</strong><span>MERGED OR RELEASED</span></div>
+        <div><strong>04</strong><span>UNDER REVIEW</span></div>
+        <a href="https://github.com/MohammedThowfiq" target="_blank" rel="noreferrer">VIEW GITHUB <span>↗</span></a>
+      </div>
+      <div class="contribution-grid">
+        <a class="contribution contribution-feature reveal" href="https://github.com/skyhook-io/radar/pull/1605" target="_blank" rel="noreferrer"><span class="contribution-state">UNDER REVIEW</span><small>KUBERNETES · DEVELOPER TOOLING</small><h3>Radar</h3><p>Added cleanup TTL visibility for Jobs, CronJobs and ScaledJobs, with regression coverage across resource types.</p><b>PR #1605 ↗</b></a>
+        <a class="contribution reveal" href="https://github.com/apache/sedona/pull/3309" target="_blank" rel="noreferrer"><span class="contribution-state merged">MERGED</span><small>APACHE · DATA</small><h3>Apache Sedona</h3><p>Published documentation sitemaps at every language root.</p><b>PR #3309 ↗</b></a>
+        <a class="contribution reveal" href="https://github.com/quarkusio/quarkus/pull/56391" target="_blank" rel="noreferrer"><span class="contribution-state merged">MERGED</span><small>JAVA · CLOUD NATIVE</small><h3>Quarkus</h3><p>Corrected numbered callout lists across documentation examples.</p><b>PR #56391 ↗</b></a>
+        <a class="contribution reveal" href="https://github.com/tt-a1i/archify/pull/275" target="_blank" rel="noreferrer"><span class="contribution-state merged">MERGED</span><small>DEVELOPER EXPERIENCE</small><h3>Archify</h3><p>Restored preview updates by falling back to polling after watcher failures.</p><b>PR #275 ↗</b></a>
+        <a class="contribution reveal" href="https://github.com/youssofal/MTPLX/pull/437" target="_blank" rel="noreferrer"><span class="contribution-state released">RELEASED · 2.11.1</span><small>MACOS · PRODUCTIVITY</small><h3>MTPLX</h3><p>Fixed scrolling and document height for long chat drafts.</p><b>PR #437 ↗</b></a>
+        <a class="contribution reveal" href="https://github.com/THU-MAIC/OpenMAIC/pull/1358" target="_blank" rel="noreferrer"><span class="contribution-state">UNDER REVIEW</span><small>AI · MEDIA PIPELINE</small><h3>OpenMAIC</h3><p>Preserved planned audio during chunk assembly and protected retries from stale artifacts.</p><b>PR #1358 ↗</b></a>
+      </div>
+      <div class="contribution-more reveal"><span>ALSO CONTRIBUTED TO</span><p>TDHook · Needle · Semantiq · LoopX · TencentDB Agent Memory · Manim</p></div>
+    </section>
+
     <section class="lab section" id="lab">
       <div class="lab-orb" aria-hidden="true"></div>
-      <div class="section-code mono">/ 06 AI LAB</div>
+      <div class="section-code mono">/ 07 AI LAB</div>
       <div class="lab-head reveal"><p class="overline">EXPERIMENTS IN PROGRESS</p><h2>Learning the systems<br>that will shape the next decade.</h2><p>These are active explorations—not inflated production claims.</p></div>
       <div class="lab-grid">
         <article class="lab-card lab-feature reveal"><div class="lab-top"><span class="status"><i></i>BUILDING</span><span class="mono">AI/001</span></div><div class="agent-map" aria-hidden="true"><span>DISCOVER</span><i></i><span>REASON</span><i></i><span>ACT</span></div><h3>Autonomous Opportunity Agent</h3><p>A human-in-the-loop workflow for role discovery, fit analysis, tailored application documents and progress tracking.</p><ul><li>Long-horizon agents</li><li>Structured workflows</li><li>Document generation</li></ul></article>
